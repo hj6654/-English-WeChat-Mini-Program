@@ -1,0 +1,16 @@
+<view class="content">
+  <view class="topContent">
+    <image src="/images/1.jpeg"></image>
+    <text>English Temple</text>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="middleContent">
+    <text>xxx是一款专注于单词学习的小程序，用户可以选择单词书，每日进行练习，高效率学习，记录自己的成长</text>
+    <text>感谢来自幽灵数据的支持，下面是他们的网站地址---https://www.ylapi.cn</text>
+  </view>
+  <view class="bottomContent">
+    <text>谢谢大家支持！</text>
+  </view>
+</view>

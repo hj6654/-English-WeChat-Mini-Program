@@ -1,0 +1,166 @@
+.bln1{
+  width: 150px!important;
+  margin-top: 30rpx;
+}
+
+
+.container{
+  padding-top: 50rpx;
+  padding-bottom: 0rpx;
+  position: relative;
+  background-color: #fcdb65;
+}
+
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+
+.img1{
+  transform: translateY(-90rpx);
+  width: 100%;
+  align-self: flex-start;
+}
+
+
+.img1 image{
+  width: 300rpx;
+  height: 300rpx;
+}
+
+
+.line{
+  width: 650rpx;
+  margin-left: 50rpx;
+  border-top:7rpx #000 dashed ;
+  transform: translateY(-60rpx);
+}
+
+
+.MiddleContent{
+  transform: translateY(-150rpx);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.WordTable{
+  background-color: white;
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+  margin-top: 30rpx;
+  width: 700rpx;
+  height: 300rpx;
+  border-radius: 30rpx;
+  box-shadow: 0 0 6rpx grey;
+}
+
+
+.Content1{
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350rpx;
+}
+
+
+.Content2{
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350rpx;
+}
+
+
+.Study{
+  transform: translateY(-20rpx);
+  margin: auto;
+  width: 380rpx;
+  height: 70rpx;
+  background-color: #fcdb65;
+  border-radius: 30rpx;
+  box-shadow: 0 0 8rpx grey;
+}
+
+
+.Ng1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+.line1{
+  transform: translateY(40rpx);
+  width: 100%;
+  /* margin-left: 50rpx; */
+  border-top:3rpx grey solid ;
+  opacity: 0.5;
+}
+
+
+.End{
+  margin-top: -90rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.End view{
+  width: 100%;
+  height: 110rpx;
+  display: flex;
+  align-items: center;
+}
+
+
+.End navigator{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+.End image{
+  margin: 20rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+
+.Img2{
+  width: 45rpx!important;
+  height: 45rpx!important;
+  margin: 25rpx!important;
+}
+
+
+.Share button{
+  background-color: white;
+  text-align: left;
+  font-size: medium;
+  display: flex;
+  align-items: center;
+}

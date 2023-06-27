@@ -1,0 +1,130 @@
+<view class="container" style=" padding-top: {{padding}}; display: {{display}};">
+  <block wx:if="{{information}}">
+    <text>请登录</text>
+    <text>进行用户信息授权</text>
+  </block>
+
+
+  <view class="userinfo">
+    <block wx:if="{{!hasUserInfo}}">
+      <button class="bln1" wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" type="primary" size="mini"> 登录
+      </button>
+    </block>
+    <block wx:else>
+    </block>
+  </view>
+</view>
+
+
+
+<view class="bg" wx:if="{{hasUserInfo}}">
+
+  <view class="all">
+    <view bindtap="gotociku" wx:if="{{!initial}}">
+      <view class="top">
+        <view class="pic">
+          <image src="/images/schoolbook.png"></image>
+        </view>
+
+        <view class="oth">
+          <view class="title">
+            {{book[index].child_list[chindex].title}}
+          </view>
+          <view class="text">
+            <text>每日5词，剩余{{book[index].child_list[chindex].course_num}}天</text>
+          </view>
+          <view class="jdt">
+            <view>
+              <progress class="progressa" percent="{{bfb}}" show-info="true" active="true" activeColor="#48D1CC"
+                border-radius="15rpx" font-size="30rpx" stroke-width="20rpx">
+              </progress>
+            </view>
+            <view class="ar">
+              <view>
+                <text>已学单词</text>
+
+              </view>
+              <view class="num">
+                <text>{{book[index].child_list[chindex].study}}/{{book[index].child_list[chindex].word_num}}</text>
+              </view>
+            </view>
+          </view>
+
+
+          <view class="btn" bindtap="gotobook">
+            调整计划
+          </view>
+        </view>
+      </view>
+    </view>
+    <view bindtap="gotociku" wx:if="{{initial}}">
+      <view class="top">
+        <view class="pic">
+          <image src="/images/schoolbook.png"></image>
+        </view>
+
+        <view class="oth">
+          <view class="title">
+            开始学习
+          </view>
+          <view class="text">
+            <text></text>
+          </view>
+          <view class="jdt">
+            <view>
+              <progress class="progressa" percent="0" show-info="true" active="true" activeColor="#48D1CC"
+                border-radius="15rpx" font-size="30rpx" stroke-width="20rpx">
+              </progress>
+            </view>
+            <view class="ar">
+              <view>
+                <text>已学单词</text>
+
+              </view>
+              <view class="num">
+                <text>0</text>
+              </view>
+            </view>
+          </view>
+
+
+          <view class="btn" bindtap="gotobook">
+            调整计划
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="line"></view>
+
+    <view class="mid">
+
+      <view class="plan">
+        今日计划
+      </view>
+
+      <view class="word">
+        <view class="newword allword"  bindtap="gttdt">
+          需新学
+          <text><text class="num">{{20-newword}}</text> 词</text>
+        </view>
+
+        <view class="newword allword" bindtap="gttdt">
+          今日词库
+          <text><text class="num">20</text> 词</text>
+        </view>
+
+        <view class="oldword allword">
+          需复习
+          <text> <text class="num">5</text> 词</text>
+        </view>
+      </view>
+
+
+      <view class="onbtn">
+        <button type="primary" bindtap="gotostudy" class="btn">开始听写</button>
+      </view>
+    </view>
+  </view>
+</view>

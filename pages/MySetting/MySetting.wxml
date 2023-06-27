@@ -1,0 +1,75 @@
+<view class="container" style="background-color: {{color}}; padding-top: {{padding}};">
+  <!-- <block wx:if="{{information}}">
+    <text>请登录</text>
+    <text>进行用户信息授权</text>
+  </block> -->
+
+
+  <view class="userinfo">
+    <!-- <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data class="userinfo-text" type="userNickName"></open-data>
+    </block> -->
+
+    <block wx:if="{{!hasUserInfo}}">
+      <button class="bln1" wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" type="primary" size="mini"> 登录 </button>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+
+  <view class="img1" wx:if="{{hasUserInfo}}">
+    <image src="/images/WechatIMG346.png"></image>
+    <view class='line'></view>
+  </view>
+
+</view>
+<block wx:if="{{hasUserInfo}}">
+
+  <view class="MiddleContent">
+    <view class="WordTable">
+
+      <view class="Content1">
+        <text>已学单词</text>
+        <text style="font-weight:bold;">{{book[index].child_list[chindex].study}}/{{book[index].child_list[chindex].word_num}}</text>
+      </view>
+
+      <view class="Content2" bindtap="gotoreview">
+        <text>重点背诵</text>
+        <text style="font-weight:bold;">{{review.length}}</text>
+      </view>
+
+      <view class="Study">
+        <navigator class="Ng1" url="/pages/index/index" open-type='switchTab'><text>开始学习</text></navigator>
+      </view>
+
+    </view>
+    <view class="line1"></view>
+  </view>
+
+  <view class="End">
+    <view>
+      <navigator url="../feedback/index">
+        <image src="/images/问题反馈.png"></image>
+        <text>问题反馈</text>
+      </navigator>
+    </view>
+
+    <view>
+      <navigator url="/pages/AboutUs/AboutUs">
+        <image class="Img2" src="/images/信封.png"></image>
+        <text>关于我们</text>
+      </navigator>
+    </view>
+
+    <view class="Share">
+      <image class="img3" src="/images/分享.png"></image>
+      <button style="font-weight: normal; margin: 0rpx; padding: 0rpx; width: 100%; height: 100%; margin-left: 8rpx;" open-type="share">分享小程序</button>
+    </view>
+  </view>
+</block>

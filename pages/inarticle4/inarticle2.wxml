@@ -1,0 +1,25 @@
+<view class="all">
+  <view class="contenttop">
+    <image src="/images/5887_s.jpg" class="img"></image>
+  <view class="title">
+    <text>True nobility</text>
+  </view>
+    <view class="time">
+    <text>推送于2021-2-2</text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="text">
+    <text>
+      In a calm sea every man is a pilot.
+
+      But all sunshine without shade, all pleasure without pain, is not life at all.Take the lot of the happiest - it is a tangled yarn.Bereavements and blessings,one following another, make us sad and blessed by turns. Even death itself makes life more loving. Men come closest to their true selves in the sober moments of life, under the shadows of sorrow and loss.
+
+      In the affairs of life or of business, it is not intellect that tells so much as character, not brains so much as heart, not genius so much as self-control, patience, and discipline, regulated by judgment.
+
+      I have always believed that the man who has begun to live more seriously within begins to live more simply without. In an age of extravagance and waste, I wish I could show to the world how few the real wants of humanity are.
+
+      To regret one's errors to the point of not repeating them is true repentance.There is nothing noble in being superior to some other man. The true nobility is in being superior to your previous self.
+    </text>
+  </view>
+</view>

@@ -1,0 +1,29 @@
+<view class="contentTop" wx:for="{{book[bookindex].child_list.length}}" wx:key="index" data-idx = "{{index}}" bindtap="gotoindex">
+      <view >
+        <navigator url="/pages/index/index" open-type="switchTab">
+          <view class="top">
+            <view class="pic">
+                  <image  src="/images/schoolbook.png"></image>
+            </view>
+
+            <view class="oth">
+                  <view class="title">
+                      {{book[bookindex].child_list[index].title}}
+                  </view>
+                  <view class="jdt">
+
+                    <view class="ar">
+                      <view>
+                        <text>已学单词</text>   
+                      </view>
+                      <view class="nnum">
+                        <text>{{book[bookindex].child_list[index].study}}/{{book[bookindex].child_list[index].word_num}}</text>                           
+                      </view>            
+                    </view>
+                  </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+

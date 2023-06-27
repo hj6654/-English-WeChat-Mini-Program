@@ -1,0 +1,28 @@
+<view class="contentTop" wx:for="{{book}}" wx:key="index" data-idx = "{{index}}" bindtap="gotociku">
+  <view >
+      <view class="top">
+        <view class="pic">
+              <image  src="/images/schoolbook.png"></image>
+        </view>
+
+        <view class="oth">
+              <view class="title">
+                  {{book[index].title}}
+              </view>
+              <view class="text">
+                <text>每日20词，剩余{{book[index].course_num}}天</text>
+              </view>
+              <view class="jdt">
+                <view class="ar">
+                  <view>
+                    <text>总单词</text>   
+                  </view>
+                  <view class="nnum">
+                    <text>{{book[index].word_num}}</text>                           
+                  </view>            
+                </view>
+              </view>
+        </view>
+      </view>
+  </view>
+</view>

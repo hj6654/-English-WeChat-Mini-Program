@@ -1,0 +1,8 @@
+<view class="content" wx:for="{{20}}" wx:key="index">
+  <view class="firstContent">
+    <text class="english">{{words.datas[index].name}}</text>
+    <text class="chinese">
+        {{words.datas[index].desc}}</text>
+  </view>        
+  <view class="listen" bindtap="play" data-idx = "{{index}}"><image src="/images/小喇叭.png"></image></view>
+</view>
