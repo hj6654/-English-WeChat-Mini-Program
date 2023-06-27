@@ -1,0 +1,55 @@
+{
+  "pages":[
+    "pages/index/index", 
+    "pages/article/article",
+    "pages/todayThesaurus/dayThesaurus",
+    "pages/newStudyWord/newstudyword",
+    "pages/book/book", 
+    "pages/review/review", 
+    "pages/allThesaurus/allThesaurus",
+    "pages/inbook/inbook", 
+    "pages/Thesaurus/Thesaurus",
+    "pages/inarticle/inarticle",
+    "pages/inarticle6/inarticle2",
+    "pages/inarticle2/inarticle2",
+    "pages/inarticle3/inarticle2",
+    "pages/inarticle4/inarticle2",
+    "pages/inarticle5/inarticle2",
+    "pages/MySetting/MySetting",
+    "pages/AboutUs/AboutUs",
+    "pages/studychoose/studychoose",
+    "pages/feedback/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#bababa",
+    "selectedColor": "#000000",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"学习",
+        "iconPath": "/images/study.png",
+        "selectedIconPath": "/images/study-h.png"
+      },
+      {
+        "pagePath":"pages/article/article",
+        "text":"文章",
+        "iconPath": "/images/book.png",
+        "selectedIconPath": "/images/book-h.png"
+      },{
+        "pagePath":"pages/MySetting/MySetting",
+        "text":"我的",
+        "iconPath": "/images/mySetting.png",
+        "selectedIconPath": "/images/mySetting-h.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
